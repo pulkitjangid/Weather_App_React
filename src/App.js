@@ -39,7 +39,7 @@ function App() {
     <div className={(typeof weather.main != "undefined")
     ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 
     'app'
-    }>{weather.message == 'city not found' && <p className="para">City Not Found</p>}
+    }>{weather.message === 'city not found' && <p className="para">City Not Found</p>}
       <main>
         <div className="search-box">
           <input type="text"
